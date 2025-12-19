@@ -111,7 +111,7 @@ Footer
   https://github.com/Tar8505/engce301-2_68_Lab4.git
 
 - **GitHub Pages URL:**  
-  https://_____.github.io/engce301-week4-ux-responsive/
+  https://tar8505.github.io/lab4/
 
 - **Screenshots:**  
   - Desktop ✔  
