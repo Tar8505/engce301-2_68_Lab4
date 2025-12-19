@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 – Persona Dashboard (Starter)</title>
+
+    <!-- TODO: นักศึกษาสามารถเปลี่ยนฟอนต์ตามชอบ เช่น Google Fonts -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        TODO: ส่วนนี้ให้เขียนใน README.md แยกต่างหาก
+        - อธิบาย Persona (ชื่อ, อายุ, อาชีพ, Goals, Pain Points)
+        - อธิบายว่าหน้าเว็บนี้ตอบโจทย์ Persona อย่างไร
+    -->
+
+    <header class="site-header">
+        <div class="logo-area">
+            <!-- TODO: เปลี่ยนชื่อระบบ/โลโก้ให้เข้ากับ Persona -->
+            <h1>CampusEats Dashboard</h1>
+            <p class="tagline">สั่งอาหารในมหาวิทยาลัย ง่าย เร็ว ในหน้าเดียว</p>
+        </div>
+
+        <nav class="main-nav">
+            <!-- 
+                TODO: ปรับชื่อเมนูให้เข้ากับ Persona
+                เช่น "วันนี้", "งานที่ต้องทำ", "สถิติ", "ประวัติ", ฯลฯ
+            -->
+            <a href="#today">วันนี้</a>
+            <a href="#menu">เมนูอาหาร</a>
+            <a href="#orders">ออเดอร์ของฉัน</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: ภาพรวมวันนี้ / Overview -->
+        <section id="today" class="section section-today">
+            <header class="section-header">
+                <h2>วันนี้จะกินอะไรดี?</h2>
+                <!-- TODO: สรุปสั้น ๆ ว่า Persona สนใจอะไรเป็นอันดับแรก -->
+                <p class="section-subtitle">
+                    เมนูยอดนิยมและร้านอาหารในตอนนี้
+                </p>
+            </header>
+
+            <div class="cards-row">
+                <!-- 
+                    TODO: ให้นักศึกษาเปลี่ยนเนื้อหาในแต่ละ .card 
+                    ให้ตรงกับ persona ของกลุ่มตัวเอง
+                -->
+                <article class="card">
+                    <h3>เมนูยอดนิยม</h3>
+                    <p>ข้าวกะเพราไก่ไข่ดาว</p>
+                    <p>ราคาเฉลี่ย: 50 บาท</p>
+                    <!-- TODO: เปลี่ยนข้อมูลเป็นของ Persona -->
+                </article>
+
+                <article class="card">
+                    <h3>ร้านแนะนำ</h3>
+                    <p>โรงอาหารมหาลัย</p>
+                    <p>ใช้เวลารับอาหาร ~10 นาที</p>
+                    <!-- TODO: ปรับให้ตรงกับชีวิตจริงของ Persona -->
+                </article>
+
+                <article class="card">
+                    <h3>โปรโมชันวันนี้</h3>
+                    <p>ส่งฟรี เมื่อสั่งก่อน 12:00</p>
+                    <p>เฉพาะร้านที่ร่วมรายการ</p>
+                    <!-- TODO: อาจเปลี่ยนเป็นกราฟแท่ง/แถบ progress bar ในเวอร์ชันถัดไป -->
+                </article>
+            </div>
+        </section>
+
+        <!-- Section 2: งานที่ต้องทำ / menu -->
+        <section id="menu" class="section section-menu">
+            <header class="section-header">
+                <h2>เมนูอาหาร</h2>
+                <p class="section-subtitle">
+                    เลือกเมนูจากร้านอาหารภายในมหาวิทยาลัย
+                </p>
+            </header>
+
+            <!-- 
+                TODO: เลือกว่าจะใช้ <ul>, <ol> หรือ <table> ตามลักษณะข้อมูล
+                และให้นักศึกษาออกแบบรูปแบบข้อมูลเอง
+            -->
+            <div class="menu-layout">
+                <div class="menu-list">
+                    <h3>หมวดหมู่</h3>
+                    <ul>
+                        <li>อาหารจานเดียว</li>
+                        <li>ก๋วยเตี๋ยว</li>
+                        <li>เครื่องดื่ม</li>
+                        <li>ของหวาน</li>
+                        <!-- TODO: เปลี่ยนรายการเป็นงานจริงของ Persona -->
+                    </ul>
+                </div>
+
+                <div class="menu-table-wrapper">
+                    <h3>รายการเมนู</h3>
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th>เมนู</th>
+                                <th>ร้าน</th>
+                                <th>ราคา</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ข้าวผัดหมู</td>
+                                <td>ร้านป้าแดง</td>
+                                <td>45 บาท</td>
+                            </tr>
+                            <tr>
+                                <td>ก๋วยเตี๋ยวต้มยำ</td>
+                                <td>ร้านเจ๊นิด</td>
+                                <td>50 บาท</td>
+                            </tr>
+                            <tr>
+                                <td>ชาเย็น</td>
+                                <td>ร้านเครื่องดื่ม A</td>
+                                <td>30 บาท</td>
+                            </tr>
+                            <!-- TODO: ปรับข้อมูลตารางให้เข้ากับ Persona -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: ข้อมูลเสริม / orders Info -->
+        <section id="orders" class="section section-orders">
+            <header class="section-header">
+                <h2>ออเดอร์ของฉัน</h2>
+                <p class="section-subtitle">
+                    ติดตามสถานะอาหารที่สั่งไว้
+                </p>
+            </header>
+
+            <div class="orders-layout">
+                <article class="card">
+                    <h3>ออเดอร์ล่าสุด</h3>
+                    <p>ข้าวกะเพราไก่ไข่ดาว</p>
+                    <p>สถานะ: กำลังปรุง</p>
+                    <!-- TODO: เปลี่ยนเป็น Tips ที่ตรงกับวิธีการทำงานของ Persona -->
+                </article>
+
+                <article class="card">
+                    <h3>คำแนะนำการใช้งาน</h3>
+                    <p>สั่งอาหารล่วงหน้า 15 นาที เพื่อลดเวลารอคิวช่วงพักเที่ยง</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <!-- TODO: ปรับข้อความ footer ตามที่กลุ่มต้องการ -->
+        <p>สร้างเพื่อ ENGCE301 – Week 4 LAB (HTML, CSS &amp; Responsive Design)</p>
+    </footer>
+
+    <!-- 
+        TODO (เสริม): 
+        - นักศึกษาอาจเพิ่มปุ่มกลับขึ้นด้านบน
+        - หรือส่วนสรุป Persona อย่างสั้น ๆ ใน footer หรือ sidebar
+    -->
+</body>
+
+</html>
